@@ -45,13 +45,6 @@ header p {
   padding: 2%;
   border-bottom: 1px solid white;
 }
-.survey li:hover {
-  background-color: #666666;
-  text-align: center;
-  border-radius: 3px;
-  margin: 50px;
-  padding: 3px;
-}
 
 .end {
   background-color: #555555;
@@ -69,6 +62,7 @@ header p {
 
 .q1 {
   display: block;
+  align-items: center;
 }
 
 .q2 {
@@ -85,9 +79,69 @@ header p {
   display: none;
 }
 
-.next {
-  background-color: #666666;
-  color: white;
-  width: 4%;
-  border-radius: 3px;
+/*https://itecnote.com/tecnote/how-to-fill-the-first-two-stars-in-font-awesome-star-rating/  */
+
+/* associated with property direction, it allows to determine bidirectional text and allows developer to control text embedding
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi*/
+.option1,
+.option2,
+.option3,
+.option4,
+.option5 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 80px;
+}
+.option1 span.star,
+.option2 span.star,
+.option3 span.star,
+.option4 span.star,
+.option5 span.star {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+
+.star span.star:hover {
+  cursor: pointer;
+}
+.option1 span.star:before,
+.option2 span.star:before,
+.option3 span.star:before,
+.option4 span.star:before,
+.option5 span.star:before {
+  content: "\f006";
+  padding-right: 5px;
+  color: #999999;
+}
+
+.option1 span.star:hover:before,
+.option1 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
+}
+.option2 span.star:hover:before,
+.option2 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
+}
+
+.option3 span.star:hover:before,
+.option3 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
+}
+
+.option4 span.star:hover:before,
+.option4 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
+}
+
+.option5 span.star:hover:before,
+.option5 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
 }

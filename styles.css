@@ -1,81 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    background-image: url("https://img.freepik.com/free-photo/white-cloud-sky-background_74190-4646.jpg?w=2000");
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-photo/white-cloud-sky-background_74190-4646.jpg?w=2000");
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .cats {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 li {
-    text-decoration: none;
-    list-style: none;
-    margin: 20px;
-    max-width: 200px;
-    display: inline-block;
-    border-radius: 3px;
-    background-color: white;
+  text-decoration: none;
+  list-style: none;
+  margin: 20px;
+  max-width: 200px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: white;
 }
 
 header p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .survey {
-    width: 80%;
-    margin: 15% auto;
-    background: rgb(143, 190, 243);
-    color: white;
-    max-width: 40%;
+  width: 80%;
+  margin: 15% auto;
+  background: rgb(143, 190, 243);
+  color: white;
+  max-width: 40%;
 }
 
 .survey h3 {
-    margin-bottom: 2%;
-    padding: 2%;
-    border-bottom: 1px solid white;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-bottom: 1px solid white;
 }
 
 .quotes {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .q1 {
-    display: block;
+  display: block;
 }
 
 .q2 {
-    display: none;
+  display: none;
 }
 
 .q3 {
-    display: none;
+  display: none;
 }
 
 .q4 {
-    display: none;
+  display: none;
 }
 
 .q5 {
-    display: none;
+  display: none;
 }
 
-
 /*https://itecnote.com/tecnote/how-to-fill-the-first-two-stars-in-font-awesome-star-rating/  */
-
 
 /* associated with property direction, it allows to determine bidirectional text and allows developer to control text embedding
 
@@ -88,9 +86,9 @@ https://css-tricks.com/viewport-sized-typography/
 .option3,
 .option4,
 .option5 {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    font-size: 6.1vw;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 6.1vw;
 }
 
 .option1 span.star,
@@ -98,16 +96,16 @@ https://css-tricks.com/viewport-sized-typography/
 .option3 span.star,
 .option4 span.star,
 .option5 span.star {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 .star span.star:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .option1 span.star:before,
@@ -115,23 +113,23 @@ https://css-tricks.com/viewport-sized-typography/
 .option3 span.star:before,
 .option4 span.star:before,
 .option5 span.star:before {
-    content: "\f006";
-    /* padding-right: 5px; */
-    color: #999999;
+  content: "\f006";
+  /* padding-right: 5px; */
+  color: #999999;
 }
 
 .option1 span.star:hover:before,
-.option1 span.star:hover~span.star:before,
+.option1 span.star:hover ~ span.star:before,
 .option2 span.star:hover:before,
-.option2 span.star:hover~span.star:before,
+.option2 span.star:hover ~ span.star:before,
 .option3 span.star:hover:before,
-.option3 span.star:hover~span.star:before,
+.option3 span.star:hover ~ span.star:before,
 .option4 span.star:hover:before,
-.option4 span.star:hover~span.star:before,
+.option4 span.star:hover ~ span.star:before,
 .option5 span.star:hover:before,
-.option5 span.star:hover~span.star:before {
-    content: "\f005";
-    color: #e3cf7a;
+.option5 span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #e3cf7a;
 }
 
 .next1,
@@ -139,38 +137,38 @@ https://css-tricks.com/viewport-sized-typography/
 .next3,
 .next4,
 .next5 {
-    background-color: #666666;
-    color: white;
-    width: 4%;
-    border-radius: 3px;
-    margin: 2%;
-    min-width: 30px;
+  background-color: #666666;
+  color: white;
+  width: 4%;
+  border-radius: 3px;
+  margin: 2%;
+  min-width: 30px;
 }
 
 .author {
-    align-items: space-between;
+  align-items: space-between;
 }
 
 .wise-dropzone {
-    background-color: #6db65b;
-    padding: 10px;
-    margin-top: 2%;
+  background-color: #6db65b;
+  padding: 10px;
+  margin-top: 2%;
 }
 
 .motivational-dropzone {
-    background-color: #6db65b;
-    padding: 10px;
-    margin-top: 2%;
+  background-color: #6db65b;
+  padding: 10px;
+  margin-top: 2%;
 }
 
 .philo-dropzone {
-    background-color: #6db65b;
-    padding: 1%;
-    margin-top: 2%;
+  background-color: #6db65b;
+  padding: 1%;
+  margin-top: 2%;
 }
 
 .instructions {
-    font-size: 16px;
-    font-style: italic;
-    color: #666666;
+  font-size: 16px;
+  font-style: italic;
+  color: #666666;
 }

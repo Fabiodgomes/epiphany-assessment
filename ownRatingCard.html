@@ -2,99 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    </style>
-    <title>Quotes</title>
+  </style>
+  <title>Quotes</title>
 </head>
 
 <body>
-    <div class="survey">
-        <div class="q1">
-            <h3>Share us your opinion about these quotes</h3>
+  <div class="survey">
+    <div class="q1">
+      <h3>Share us your opinion about these quotes</h3>
 
-            <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_1.png" ondragstart="onDragStart(event);" />
+      <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_1.png"
+        ondragstart="onDragStart(event);" />
 
-            <p class="instructions">Drag the image into the category</p>
-            <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                Wise
-            </div>
-            <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                Motivational
-            </div>
-            <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
-            </div>
-            <button class="next1">></button>
+      <p class="instructions">Drag the image into the category</p>
+      <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
+        Wise
+      </div>
+      <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
+        Motivational
+      </div>
+      <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
+      </div>
+      <button class="next1">></button>
 
-            <div class="q2">
-                <h3>How do you feel about these quotes?</h3>
-                <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_2.png" ondragstart="onDragStart(event);" />
-                <p class="instructions">Drag the image into the category</p>
-                <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Wise
-                </div>
-                <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Motivational
-                </div>
-                <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
-                </div>
-
-                <button class="next2">></button>
-            </div>
-
-            <div class="q3">
-                <h3>How do you feel about these quotes?</h3>
-
-                <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_3.png" ondragstart="onDragStart(event);" />
-                <p class="instructions">Drag the image into the category</p>
-                <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Wise
-                </div>
-                <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Motivational
-                </div>
-                <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
-                </div>
-
-                <button class="next3">></button>
-            </div>
-
-            <div class="q4">
-                <h3>How do you feel about these quotes?</h3>
-                <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_4.png" ondragstart="onDragStart(event);" />
-                <p class="instructions">Drag the image into the category</p>
-                <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Wise
-                </div>
-                <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Motivational
-                </div>
-                <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
-                </div>
-                <button class="next4">></button>
-            </div>
-
-            <div class="q5">
-                <h3>How do you feel about these quotes?</h3>
-                <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_5.png" ondragstart="onDragStart(event);" />
-                <p class="instructions">Drag the image into the category</p>
-                <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Wise
-                </div>
-                <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
-                    Motivational
-                </div>
-                <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)> Philosophical
-                </div>
-
-
-                <button class="next5">></button>
-            </div>
+      <div class="q2">
+        <h3>How do you feel about these quotes?</h3>
+        <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_2.png"
+          ondragstart="onDragStart(event);" />
+        <p class="instructions">Drag the image into the category</p>
+        <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Wise
         </div>
-        <script src="app.js"></script>
+        <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Motivational
+        </div>
+        <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)>
+          Philosophical
+        </div>
+
+        <button class="next2">></button>
+      </div>
+
+      <div class="q3">
+        <h3>How do you feel about these quotes?</h3>
+
+        <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_3.png"
+          ondragstart="onDragStart(event);" />
+        <p class="instructions">Drag the image into the category</p>
+        <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Wise
+        </div>
+        <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Motivational
+        </div>
+        <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)>
+          Philosophical
+        </div>
+
+        <button class="next3">></button>
+      </div>
+
+      <div class="q4">
+        <h3>How do you feel about these quotes?</h3>
+        <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_4.png"
+          ondragstart="onDragStart(event);" />
+        <p class="instructions">Drag the image into the category</p>
+        <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Wise
+        </div>
+        <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Motivational
+        </div>
+        <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)>
+          Philosophical
+        </div>
+        <button class="next4">></button>
+      </div>
+
+      <div class="q5">
+        <h3>How do you feel about these quotes?</h3>
+        <img draggable="true" id="quote1" class="quotes" src="./imgs-design/img/img_statement_5.png"
+          ondragstart="onDragStart(event);" />
+        <p class="instructions">Drag the image into the category</p>
+        <div class="wise-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Wise
+        </div>
+        <div class="motivational-dropzone" value="motivational" ondragover=onDragOver(event) ondrop=onDrop(event);>
+          Motivational
+        </div>
+        <div class="philo-dropzone" value="wise" ondragover=onDragOver(event) ondrop=onDrop(event)>
+          Philosophical
+        </div>
+
+
+        <button class="next5">></button>
+      </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -118,30 +118,26 @@ header p {
 }
 
 .option1 span.star:hover:before,
-.option1 span.star:hover ~ span.star:before {
-  content: "\f005";
-  color: #e3cf7a;
-}
+.option1 span.star:hover ~ span.star:before,
 .option2 span.star:hover:before,
-.option2 span.star:hover ~ span.star:before {
-  content: "\f005";
-  color: #e3cf7a;
-}
-
+.option2 span.star:hover ~ span.star:before,
 .option3 span.star:hover:before,
-.option3 span.star:hover ~ span.star:before {
-  content: "\f005";
-  color: #e3cf7a;
-}
-
+.option3 span.star:hover ~ span.star:before,
 .option4 span.star:hover:before,
-.option4 span.star:hover ~ span.star:before {
-  content: "\f005";
-  color: #e3cf7a;
-}
-
+.option4 span.star:hover ~ span.star:before,
 .option5 span.star:hover:before,
 .option5 span.star:hover ~ span.star:before {
   content: "\f005";
   color: #e3cf7a;
+}
+
+.next1,
+.next2,
+.next3,
+.next4,
+.next5 {
+  background-color: #666666;
+  color: white;
+  width: 4%;
+  border-radius: 3px;
 }

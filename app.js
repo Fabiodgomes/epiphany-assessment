@@ -18,6 +18,9 @@ const next5 = document.querySelector(".next5");
 
 const survey = document.querySelector(".survey");
 
+const yes = document.querySelector(".yes");
+const no = document.querySelector(".no");
+
 option1.addEventListener("click", function (e) {
   q1.style.display = "none";
   q2.style.display = "block";
@@ -67,3 +70,25 @@ next5.addEventListener("click", function (e) {
   q5.style.display = "none";
   q1.style.display = "block";
 });
+
+//dataTransfer.setData() method sets the data type and the value of the dragged data
+// the data type is "text" and the value is the id of the draggable element
+
+function onDragStart(event) {
+  event.dataTransfer.setData("text/plain", event.target.id);
+  console.log("DRAGGED");
+}
+
+function onDragOver(event) {
+  event.preventDefault();
+}
+
+function onDrop(event) {
+  const id = event.dataTransfer.getData("text/plain");
+  const draggableElement = document.getElementById(id);
+  console.log("ID", id);
+  const dropzone = event.target;
+  console.log("DROPZONE", dropzone);
+  dropzone.appendChild(draggableElement);
+  event.dataTransfer.clearData();
+}

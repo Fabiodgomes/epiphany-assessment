@@ -37,7 +37,7 @@ header p {
   margin: 15% auto;
   background: rgb(143, 190, 243);
   color: white;
-  max-width: 500px;
+  max-width: 40%;
 }
 
 .survey h3 {
@@ -46,17 +46,9 @@ header p {
   border-bottom: 1px solid white;
 }
 
-.end {
-  background-color: #555555;
-  width: 80%;
-  margin: 35% auto;
-  padding: 20 px 0;
-  border-radius: 3px;
-  box-shadow: 1px 1px 7px (0, 0, 0, 0.5);
-}
-
 .quotes {
-  width: 400px;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -83,7 +75,9 @@ header p {
 
 /* associated with property direction, it allows to determine bidirectional text and allows developer to control text embedding
 
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi
+https://css-tricks.com/viewport-sized-typography/
+*/
 .option1,
 .option2,
 .option3,
@@ -91,7 +85,7 @@ header p {
 .option5 {
   unicode-bidi: bidi-override;
   direction: rtl;
-  font-size: 80px;
+  font-size: 6.1vw;
 }
 .option1 span.star,
 .option2 span.star,
@@ -102,6 +96,8 @@ header p {
   font-weight: normal;
   font-style: normal;
   display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 .star span.star:hover {
@@ -113,7 +109,7 @@ header p {
 .option4 span.star:before,
 .option5 span.star:before {
   content: "\f006";
-  padding-right: 5px;
+  /* padding-right: 5px; */
   color: #999999;
 }
 
@@ -140,4 +136,29 @@ header p {
   color: white;
   width: 4%;
   border-radius: 3px;
+}
+
+.author {
+  align-items: space-between;
+}
+
+.wise-dropzone {
+  background-color: #6db65b;
+  padding: 10px;
+  margin-top: 2%;
+}
+.motivational-dropzone {
+  background-color: #6db65b;
+  padding: 10px;
+  margin-top: 2%;
+}
+.philo-dropzone {
+  background-color: #6db65b;
+  padding: 1%;
+  margin-top: 2%;
+}
+.instructions {
+  font-size: 16px;
+  font-style: italic;
+  color: #666666;
 }
